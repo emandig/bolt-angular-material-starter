@@ -1,4 +1,4 @@
-# 🏃‍♂️Bolt 🏃‍♂️ Angular 9 Material quick starter
+# 🏃‍♂️Bolt 🏃‍♂️ Angular Material Quick Starter
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.1.
 

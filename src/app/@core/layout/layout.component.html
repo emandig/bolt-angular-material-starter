@@ -1,0 +1,44 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="push">
+    <mat-nav-list>
+      <a href="#" routerLink="/" [routerLinkActive]="'is-active'" mat-list-item
+        >Home</a
+      >
+      <a href="#" mat-list-item>Menu Item 2</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <div class="body-wrapper">
+    <div class="header">
+      <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <button
+            mat-icon-button
+            (click)="sidenav.toggle()"
+            fxShow="true"
+            fxHide.gt-sm
+          >
+            <mat-icon>menu</mat-icon>
+          </button>
+          <span>🏃‍♂️BOLT 🏃‍♂️</span>
+          <div fxShow="true" fxHide.lt-md fxFlex [fxLayoutAlign]="'end center'">
+            <a
+              href="#"
+              mat-button
+              routerLink="/"
+              [routerLinkActive]="'is-active'"
+              >Home</a
+            >
+            <a href="#" mat-button>Menu Item 2</a>
+          </div>
+        </mat-toolbar-row>
+      </mat-toolbar>
+    </div>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+
+    <app-footer></app-footer>
+  </div>
+</mat-sidenav-container>

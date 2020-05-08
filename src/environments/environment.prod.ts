@@ -1,3 +1,10 @@
+import { version } from '../../package.json';
+
 export const environment = {
-  production: true
+  appName: 'Bolt - Angular Material Quick Starter',
+  production: true,
+  envName: 'PROD',
+  versions: {
+    app: version
+  }
 };

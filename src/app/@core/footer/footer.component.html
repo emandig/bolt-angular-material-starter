@@ -1,0 +1,18 @@
+<div class="footer">
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <div fxFlex [fxLayoutAlign]="'start center'" class="mat-h4 no-margin">
+                <p>
+                    © {{ year }} - v. {{ version }} <span *ngIf="!isProd">[{{envName}}]</span>
+                </p>
+            </div>
+            <div fxFlex [fxLayoutAlign]="'end center'" class="mat-h4 no-margin">
+                <p>
+                    Created with ♥️ by
+                    <a class="white-link" href="https://github.com/emandig/" target="_blank">emandig</a> |
+                    <a class="white-link" href="https://github.com/emandig/bolt-angular-material-starter" target="_blank">Github</a>
+                </p>
+            </div>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</div>
