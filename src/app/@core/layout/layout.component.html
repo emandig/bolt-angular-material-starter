@@ -1,15 +1,14 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="push">
     <mat-nav-list>
-      <a href="#" routerLink="/" [routerLinkActive]="'is-active'" mat-list-item
-        >Home</a
-      >
-      <a href="#" mat-list-item>Menu Item 2</a>
+      <a href="#" routerLink="/" [routerLinkActive]="'is-active'" mat-list-item>Home</a>
+      <a href="#" routerLink="about" [routerLinkActive]="'is-active'" mat-list-item>About</a>
+      <a href="#" mat-list-item>Typography</a>
     </mat-nav-list>
   </mat-sidenav>
 
   <div class="body-wrapper">
-    <div class="header">
+    <div class="header mat-elevation-z6">
       <mat-toolbar color="primary">
         <mat-toolbar-row>
           <button
@@ -20,16 +19,11 @@
           >
             <mat-icon>menu</mat-icon>
           </button>
-          <span>🏃‍♂️BOLT 🏃‍♂️</span>
+          <span class="logo">🏃‍♂️BOLT 🏃‍♂️</span>
           <div fxShow="true" fxHide.lt-md fxFlex [fxLayoutAlign]="'end center'">
-            <a
-              href="#"
-              mat-button
-              routerLink="/"
-              [routerLinkActive]="'is-active'"
-              >Home</a
-            >
-            <a href="#" mat-button>Menu Item 2</a>
+            <a href="#" mat-button routerLink="/" [routerLinkActive]="'is-active'">Home</a>
+            <a href="#" mat-button routerLink="about" [routerLinkActive]="'is-active'">About</a>
+            <a href="#" mat-button>Typography</a>
           </div>
         </mat-toolbar-row>
       </mat-toolbar>
